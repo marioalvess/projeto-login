@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*Demais mídias*/
+
+/*Typical Device Breakpoints
+
+Pequenas telas: Abaixo de 576px. . 
+Celular: 576px a 767px. 
+Tablet: 768px a 991px. 
+Desktop: 992px a 1199px.  
+Grandes telas: 1200px ou mais. 
+*/
+
+/*Lembrando que já fizemos a configuração para celular e pequenas telas em Mobile First, já não é mais necessário configurar para essas medidas aqui. Então esse documento é para fazer as configurações das medidas de tablet para cima.*/
+
+
+/*Configuração para Tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section.login {
+        width: 80vw; /*Para algumas mídias o Guanabara geralmente utiliza essa configuração no container, de 80vw ou 90vw, assim o container preenche bem o espaço no dispositivo maior.*/
+    }
+
+    section.login > div.imagem {
+        float: left; /*Usado para a imagem ficar do lado esquerdo do container pai.*/
+        width: 30%; /*Usado para a imagem ocupar 30% da largura do container pai.*/
+        height: 100%; /*Usado para a imagem ocupar toda a altura do container pai.*/
+    }
+    
+    section.login > div.formulario {
+        float: right; /*Usado para o formulário ficar do lado direito do container pai.*/
+        width: 70%; /*Usado para o formulário ocupar os outros 70% da largura do container pai, já que a imagem está ocupando 30%.
+        Não é obrigatório usar esses valores que se complementam, mas eu quis preencher bem todo o elemento*/
+    }
+}
+
+/*Configuração para Desktop e Grandes telas*/
+@media screen and (min-width: 992px) {
+    section.login {
+        width: 950px; /*Para dispositivos maiores geralmente utilizamos uma medida de forma que o usuário não precise mexer a cabeça pela tela inteira para ver o conteúdo. Essa medida no contexto de conteúdos de textos e formularios está excelente, sempre verifique se está em uma boa proporção. */
+    }
+    section.login > div.imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section.login > div.formulario {
+        float: right;
+        width: 50%;
+    }
+}
