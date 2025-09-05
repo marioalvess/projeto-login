@@ -39,6 +39,12 @@ section.login {
     height: 500px;
     border-radius: 20px;
     overflow: hidden; /* Serve para tudo o que estiver fora da borda ficar escondido, assim para o border-radius funcionar efetivamente, pois a imagem que está dentro da seção tem pontas quadradas.*/
+
+    transition: width 0.3s, height 0.3s; /*Faz uma animação de transição quando o valor da largura e altura de um elemento mudam, ou seja, quando eu mudo o tamanho da viewport, simulando de um dispositivo para o outro.*/
+    transition-timing-function: ease; /*Essa propriedade é usada em conjunto com a propriedade transition, ela define a curva de velocidade da transição, ou seja, como a velocidade da animação muda ao longo do tempo. O valor ease significa que a animação começa devagar, acelera no meio, e termina devagar novamente*/
+
+
+    
 }
 
 section.login > div.imagem {

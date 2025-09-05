@@ -16,6 +16,12 @@ Grandes telas: 1200px ou mais.
 
 /*Configuração para Tablet*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82); 
+        /*Faz com que o background no Tablet tenha a cor em gradiente, não foi colocado um fundo em gradiente no celular pois para celular é necessário um site mais leve*/
+    }
+
     section.login {
         width: 80vw; /*Para algumas mídias o Guanabara geralmente utiliza essa configuração no container, de 80vw ou 90vw, assim o container preenche bem o espaço no dispositivo maior.*/
     }
@@ -35,6 +41,11 @@ Grandes telas: 1200px ou mais.
 
 /*Configuração para Desktop e Grandes telas*/
 @media screen and (min-width: 992px) {
+
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
     section.login {
         width: 950px; /*Para dispositivos maiores geralmente utilizamos uma medida de forma que o usuário não precise mexer a cabeça pela tela inteira para ver o conteúdo. Essa medida no contexto de conteúdos de textos e formularios está excelente, sempre verifique se está em uma boa proporção. */
     }
