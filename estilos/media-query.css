@@ -24,6 +24,7 @@ Grandes telas: 1200px ou mais.
 
     section.login {
         width: 80vw; /*Para algumas mídias o Guanabara geralmente utiliza essa configuração no container, de 80vw ou 90vw, assim o container preenche bem o espaço no dispositivo maior.*/
+        height: 350px;
     }
 
     section.login > div.imagem {
@@ -37,6 +38,10 @@ Grandes telas: 1200px ou mais.
         width: 70%; /*Usado para o formulário ocupar os outros 70% da largura do container pai, já que a imagem está ocupando 30%.
         Não é obrigatório usar esses valores que se complementam, mas eu quis preencher bem todo o elemento*/
     }
+
+    div.formulario > p {
+    margin-bottom: 10px;
+}
 }
 
 /*Configuração para Desktop e Grandes telas*/
@@ -48,6 +53,7 @@ Grandes telas: 1200px ou mais.
 
     section.login {
         width: 950px; /*Para dispositivos maiores geralmente utilizamos uma medida de forma que o usuário não precise mexer a cabeça pela tela inteira para ver o conteúdo. Essa medida no contexto de conteúdos de textos e formularios está excelente, sempre verifique se está em uma boa proporção. */
+        height: 450px;
     }
     section.login > div.imagem {
         float: right;
@@ -66,5 +72,6 @@ Grandes telas: 1200px ou mais.
 
 div.formulario > p {
     font-size: 1.1em;
+    margin: 20px 0px;
 }
 }
